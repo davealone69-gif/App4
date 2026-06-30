@@ -1,0 +1,8 @@
+{
+  "name": "Remix: Prompt to App",
+  "description": "Create functional web applications instantly by simply describing them in plain text prompts.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
