@@ -1,3 +1,9 @@
+## Download the latest Android APK
+
+[**⬇ Download latest debug APK**](https://github.com/davealone69-gif/App4/releases/latest/download/latest-debug.apk)
+
+This direct download is refreshed after each successful Android build on `main`. It is a debug/test APK, not a production-signed release.
+
 <div align="center">
 <img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
 </div>
