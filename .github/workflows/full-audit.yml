@@ -13,6 +13,20 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with: {fetch-depth: 0}
+      - name: Set up JDK 17 for Android
+        if: ${{ hashFiles('gradlew') == '' }}
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - name: Set up Gradle 9.3.1 without wrapper
+        if: ${{ hashFiles('gradlew') == '' }}
+        uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '9.3.1'
+      - name: Gradle build without wrapper
+        if: ${{ hashFiles('gradlew') == '' }}
+        run: gradle lint test assembleDebug --continue --stacktrace --console=plain
       - name: Gradle
         if: ${{ hashFiles('gradlew') != '' }}
         run: |
